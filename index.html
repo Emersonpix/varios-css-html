@@ -4,6 +4,7 @@
         <head>
             <meta charset="utf-8">
             <title>Primeira página de CSS</title>
+            
             <style> /*Folha de estilo 1*/
                     
                 body {
@@ -326,20 +327,118 @@
             }
             
         }
+        
+    </style>
+    
+    <style> 
+       /*<!-- Muito estilo  folha de estilo número 5-->*/
+         body{
+            font-family: 'Times New Roman', Times, serif;
+            margin:50px;
+            line-height: 50px;
+        }
+        .wrapper {
+            position: inherit;
+            overflow: hidden;
+        }
+        #top, #sidebar, #bottom .menulist{
+            border-radius: 10px;
+            margin-bottom: 10pxx; 
+
+        }
+        h1 ,h2, h3{
+            
+            color:aquamarine
+        }
+        #top {
+            background-color: blueviolet;
+            color: #FFA500;
+            padding: 50px;
+
+        }
+        #menubar{
+            width: 300px;
+            float:unset;
+
+        }
+        #main{
+            padding: 10px;
+            margin: 10px;
+            background-color: teal;
+        }
+        #sidebar{
+            background-color: #363636;
+             color: #CD3278;
+            padding: 100px;
+
+        }
+        #bottom
+        {
+            text-align-last: center;
+            padding: 20px;
+            font-size: 60%;
+            color:teal;
+
+
+
+        }
+        #menulist {
+        padding:0;
+        font: 25px verdana;
+    }
+
+    .menuitem{
+        width: 300px;
+        background-color: turquoise;
+        border: 5px solid #9370DB;
+        border-radius: 50px;
+        color: #BDB76B;
+        list-style-type: disc;
+        margin:20px;
+        padding: 5px;
+        text-align: right;
+        cursor: zoom-out;
+
+
+
+    }
+    .menuitem:nth-child(6){
+        background-color: white;
+        color: yellow;
+        font-style: italic;
+
+    }
+    .menuitem:hover {
+    background-color: #ffffff;
+    color: #d14836;
+}
+
+a {
+    color: #d14836;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
     </style>
 
         </head>
     <body>
         <script>
-            alert("Bem-vindo a minha primeira página HTML+CSS");
+            /*alert("Bem-vindo a minha primeira página HTML+CSS");*/
             
             function semEstilo(){
             document.styleSheets[0].disabled=true;
             document.styleSheets[1].disabled=true;
             document.styleSheets[2].disabled=true;
             document.styleSheets[3].disabled=true;
+            document.styleSheets[4].disabled=true;
             }
             //Função que vai mudar a página
+
              function estilo01(n){semEstilo();
                  document.styleSheets[0].disabled= false;
              }
@@ -352,30 +451,30 @@
                  }
                  function estilo04(n){semEstilo();
                  document.styleSheets[3].disabled= false;
-                 
-
-
-
-             }
+                 }
+                 function estilo05(n){semEstilo();
+                 document.styleSheets[4].disabled= false
+   }
              estilo01();
         </script>
 
         <div>
 
         <div id = "top">
-        <h1>Bem-Vindo a Minha Página Inicial!!!</h1>
+        <h1>Bem-Vindo a Minha Página Inicial</h1>
         <p>Use o menu para selecionar diferentes folhas de estilo
         </p>
         </div>
     
 <div class="wrapper">
-    <div id=menubar>
+    <div id="menubar">
                 <ul id = "menulist">
             <li onclick="estilo01()" class="menuitem">Folha de estilo 1 </li>
             <li onclick="estilo02()"class="menuitem">Folha de estilo 2</li>
             <li onclick="estilo03()"class="menuitem">Folha de estilo 3</li>
             <li onclick="estilo04()"class="menuitem">Folha de estilo 4</li>
             <li onclick="semEstilo()" class="menuitem">Sem Folha de estilo</li>
+            <li onclick="estilo05()" class="menuitem">Com Muito Muito</li>
 
         </ul>
     </div>
@@ -389,7 +488,8 @@
              <a onclick="estilo01()"href="#"> Folha de estilo 1; </a>
             <a onclick="estilo02()"href="#"> Folha de estilo 2;</a>
             <a onclick="estilo03()"href="#"> Folha de estilo 3;</a>
-            <a onclick="estilo04()"href="#"> Folha de estilo 4. </a>
+            <a onclick="estilo04()"href="#"> Folha de estilo 4; </a>
+            <a onclick="estilo05()"href="#"> Folha de estilo 5. </a>
             
  
  
