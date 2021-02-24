@@ -333,77 +333,83 @@
     <style> 
        /*<!-- Muito estilo  folha de estilo número 5-->*/
          body{
-            font-family: 'Times New Roman', Times, serif;
-            margin:50px;
+            font-family:'Courier New', Courier, monospace;
+            margin:4px;
+            text-align: center;
             line-height: 50px;
         }
+        .top{
+                 xmin-width: 900px;
+             }
+        
         .wrapper {
-            position: inherit;
-            overflow: hidden;
+            position:relative;
+            overflow:auto;
         }
-        #top, #sidebar, #bottom .menulist{
+        #top, #sidebar, #bottom{
             border-radius: 10px;
             margin-bottom: 10pxx; 
 
         }
         h1 ,h2, h3{
             
-            color:aquamarine
+            color:rgb(207, 195, 24)
         }
         #top {
-            background-color: blueviolet;
-            color: #FFA500;
-            padding: 50px;
+            background-color: rgb(6, 4, 8);
+            color: #eb9e0fd3;
+            padding: 10px;
 
         }
-        #menubar{
-            width: 300px;
-            float:unset;
-
-        }
+       
+        
         #main{
             padding: 10px;
             margin: 10px;
-            background-color: teal;
+            background-color: rgb(2, 7, 7);
+            color:#e4bf1a;
         }
         #sidebar{
-            background-color: #363636;
-             color: #CD3278;
-            padding: 100px;
+            background-color: #030101;
+             color: #e4bf1a;
+            padding: 50px;
 
         }
         #bottom
         {
             text-align-last: center;
-            padding: 20px;
+            padding: 5px;
             font-size: 60%;
-            color:teal;
+            color:rgb(9, 10, 2);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 
 
         }
-        #menulist {
-        padding:0;
-        font: 25px verdana;
-    }
-
+       
+                
     .menuitem{
-        width: 300px;
-        background-color: turquoise;
-        border: 5px solid #9370DB;
-        border-radius: 50px;
-        color: #BDB76B;
-        list-style-type: disc;
-        margin:20px;
-        padding: 5px;
-        text-align: right;
-        cursor: zoom-out;
+                    width: 200px;
+                    background-color: #070101;
+                    color: #bde01f;
+                    list-style-type: none;
+                    margin: 6px;
+                    padding: 5px;
+                    cursor: pointer; 
+                    float:left; 
 
 
 
     }
+    #menulist{
+                  padding: 0px;
+                  position: relative;
+                  overflow: auto; 
+            
+                  
+              }     
     .menuitem:nth-child(6){
-        background-color: white;
+        background-color: rgb(0, 0, 0);
         color: yellow;
         font-style: italic;
 
@@ -428,7 +434,7 @@ a:hover {
         </head>
     <body>
         <script>
-            alert("Bem-vindo a minha primeira página HTML+CSS");
+            /*alert("Bem-vindo a minha primeira página HTML+CSS");*/
             
             function semEstilo(){
             document.styleSheets[0].disabled=true;
@@ -455,7 +461,7 @@ a:hover {
                  function estilo05(n){semEstilo();
                  document.styleSheets[4].disabled= false
    }
-             estilo01();
+             estilo05();
         </script>
 
         <div>
